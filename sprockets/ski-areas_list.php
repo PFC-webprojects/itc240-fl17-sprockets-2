@@ -1,6 +1,6 @@
 <?php 
 	include './includes/config.php';
-	include './includes/header.php';
+	get_header();
 ?>
 
 <h3>Ski Areas of the World</h3>
@@ -56,5 +56,5 @@ if (mysqli_num_rows($skiAreas) > 0)  //  at least one record!
 ?>
 
 
-<?php include './includes/footer.php' ?>
+<?php get_footer() ?>
 	

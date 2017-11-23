@@ -1,6 +1,6 @@
 <?php 
 	include './includes/config.php';
-	include './includes/header.php';
+	get_header();
 ?>
 
 	
@@ -167,4 +167,4 @@
 
 
 
-<?php include './includes/footer.php' ?>
+<?php get_footer() ?>

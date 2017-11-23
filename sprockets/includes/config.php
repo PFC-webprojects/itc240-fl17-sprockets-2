@@ -26,6 +26,8 @@
 	
 	//  Create default page identifier.
 	define('THIS_PAGE', basename($_SERVER['PHP_SELF']));  //  Creates a constant (with global scope).
+
+	
 	
 	
 	//  Create config object.
@@ -34,6 +36,19 @@
 	$config->title = THIS_PAGE;  //  By default, in case we forget it in the switch below, at least this page will be named by its file name.
 	$config->banner = 'Sprockets';
 	$config->pageID ='';  //  Default value, in case we forget it in the switch below.
+
+	
+	//START NEW THEME STUFF
+	$sub_folder = 'sprockets';//change to 'widgets' or 'sprockets' etc.
+
+	//add subfolder, in this case 'fidgets' if not loaded to root:
+	$config->physical_path = $_SERVER["DOCUMENT_ROOT"] . '/' . $sub_folder;
+	$config->virtual_path = 'http://' . $_SERVER["HTTP_HOST"] . '/' . $sub_folder;
+	$config->theme = 'BusinessCasual';//sub folder to themes
+
+	//END NEW THEME STUFF
+
+
 	
 	switch(THIS_PAGE) {
 		case 'index.php':
@@ -55,8 +70,11 @@
 			break;
 	}
 	$config->title = $config->banner . ': ' . $config->title;  //  Start the page name with the site name.
+
 	
-//	echo THIS_PAGE;
-//	die;  //  The next-best thing to a break point, for troubleshooting purposes
+	//START NEW THEME STUFF
+	//creates theme virtual path for theme assets, JS, CSS, images
+	$config->theme_virtual = $config->virtual_path . '/themes/' . $config->theme . '/';
+	//END NEW THEME STUFF
 	
-	?>
+?>

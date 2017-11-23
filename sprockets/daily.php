@@ -1,6 +1,6 @@
 <?php 
 	include './includes/config.php';
-	include './includes/header.php';
+	get_header();
 ?>
 
 <?php	
@@ -132,4 +132,4 @@ $title = $alt = "Coffee Special for $day: $coffee";
 
 
 
-<?php include './includes/footer.php' ?>
+<?php get_footer() ?>

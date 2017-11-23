@@ -1,6 +1,6 @@
 <?php 
 	include './includes/config.php';
-	include './includes/header.php';
+	get_header();
 ?>
 
 <?php
@@ -74,5 +74,5 @@
 	@mysqli_close($iConn); #close connection to database
 ?>
 
-<?php include './includes/footer.php' ?>
+<?php get_footer() ?>
 	

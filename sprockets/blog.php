@@ -1,6 +1,6 @@
 <?php 
 	include './includes/config.php';
-	include './includes/header.php';
+	get_header();
 ?>
 
         <div class="card card-inverse">
@@ -49,4 +49,4 @@
           </li>
         </ul>
  
- <?php include './includes/footer.php' ?>
+ <?php get_footer() ?>
