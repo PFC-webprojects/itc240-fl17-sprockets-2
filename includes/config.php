@@ -24,7 +24,7 @@
 	//  Prevents date errors
 	date_default_timezone_set('America/Los_Angeles');
 	
-	
+
 	//  Create default page identifier.
 	define('THIS_PAGE', basename($_SERVER['PHP_SELF']));  //  Creates a constant (with global scope).
 
@@ -37,6 +37,7 @@
 	$config->title = THIS_PAGE;  //  By default, in case we forget it in the switch below, at least this page will be named by its file name.
 	$config->banner = 'Sprockets';
 	$config->pageID ='';  //  Default value, in case we forget it in the switch below.
+	$config->loadhead = '';//place items in <head> element
 
 	
 	//START NEW THEME STUFF

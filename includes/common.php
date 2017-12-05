@@ -21,6 +21,15 @@ function myerror($myFile, $myLine, $errorMsg)
 
 */
 
+
+function dbOut($str)
+{
+	if($str!=""){$str = stripslashes(trim($str));}//strip out slashes entered for SQL safety
+	return $str;
+} #End dbOut()
+
+
+
 function get_header($file=''){
     global $config;
     static $header_loaded = false;

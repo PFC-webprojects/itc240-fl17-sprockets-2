@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="<?=$config->theme_virtual?>css/business-casual.css" rel="stylesheet">
+    <?=$config->loadhead?>
 
   </head>
 

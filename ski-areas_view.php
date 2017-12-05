@@ -68,6 +68,8 @@
 	}
 ?>
 
+	<hr />
+	<p><a href="ski-areas_list.php">Back</a></p>
 	
 <?php
 	@mysqli_free_result($result); #releases web server memory.  The @ symbol tells PHP to squelch warnings.
