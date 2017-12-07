@@ -5,7 +5,7 @@
 
     <footer class="bg-faded text-center py-5">
       <div class="container">
-        <p class="m-0">Copyright &copy; Your Website 2017</p>
+        <p class="m-0">Copyright &copy; Your Website 2017&nbsp; <?=$config->adminWidget;?></p>
       </div>
     </footer>
 

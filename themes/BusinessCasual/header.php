@@ -38,16 +38,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item <?=$config->navItem[0]?>px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.php">Home</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?=$config->virtual_path?>/index.php">Home</a>
             </li>
             <li class="nav-item <?=$config->navItem[1]?>px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="ski-areas_list.php">Ski Areas</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?=$config->virtual_path?>/ski-areas_list.php">Ski Areas</a>
             </li>
             <li class="nav-item <?=$config->navItem[2]?>px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="daily.php">Daily</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?=$config->virtual_path?>/daily.php">Daily</a>
             </li>
             <li class="nav-item <?=$config->navItem[3]?>px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="contact.php">Contact</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?=$config->virtual_path?>/contact.php">Contact</a>
             </li>
           </ul>
         </div>
@@ -56,7 +56,9 @@
 
     <div class="container">
         <div class="bg-faded p-4 my-4">
-      <!-- header ends here -->
+			<?=showFeedback();?>
+	
+<!-- header ends here -->
         
         
         
