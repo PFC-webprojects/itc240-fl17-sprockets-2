@@ -47,6 +47,10 @@
 			$skiAreaNationalFlagCell .=  SKI_IMAGES_FOLDER . $skiArea['NationalFlag'] . '" alt="' . $title . '" title="' . $title . '" />' . $anchorClose . '</td>
 				';
 
+			$emptyCell				  =  '<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>';
+			$skiAreaThumbnailCell	  =  '<td>' . $anchorOpen . '<img src="' . $config->virtual_path . '/uploads/sponsor' . dbOut($skiArea['SkiAreaID']) . '_thumb.jpg" alt="Sponsor Image" title="Sponsor Image" />' . $anchorClose . '</td>
+				';
+				
 			echo '<tr>
 				';
 			if ($tableRowNumber++ % 2  ===  0) {
@@ -57,6 +61,9 @@
 				echo $skiAreaNameCell;
 				echo $skiAreaNationalFlagCell;
 			}
+			
+			echo $emptyCell;
+			echo $skiAreaThumbnailCell;
 			echo '</tr>
 				';
 		}
